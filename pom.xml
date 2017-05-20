@@ -3,12 +3,41 @@
     <groupId>ooo.connector</groupId>
     <artifactId>bootstrap-connector</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <name>BootstrapSocketConnector</name>
+    <description>Helper classes to resolve regularly occurring error "no office executable found!" when launching open
+        office in command line mode.</description>
+    <url>https://github.com/jeremysolarz/bootstrap-connector</url>
+    <name>${project.groupId}:${project.artifactId}</name>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Jeremy Solarz</name>
+            <email>jeremy.solarz@gmail.com</email>
+            <organization>Github</organization>
+            <organizationUrl>https://github.com/jeremysolarz/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/jeremysolarz/bootstrap-connector.git</connection>
+        <developerConnection>scm:git:ssh://github.com:jeremysolarz/bootstrap-connector.git</developerConnection>
+        <url>http://github.com/jeremysolarz/bootstrap-connector/tree/master</url>
+    </scm>
 
     <dependencies>
         <dependency>
