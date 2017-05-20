@@ -1,6 +1,6 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ooo.connector</groupId>
+    <groupId>com.github.jeremysolarz</groupId>
     <artifactId>bootstrap-connector</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
