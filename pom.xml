@@ -137,17 +137,8 @@
                 <configuration>
                     <serverId>oss.sonatype.org</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>deploy-to-sonatype</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                            <goal>release</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 
             <plugin>
