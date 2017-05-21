@@ -10,7 +10,7 @@ import ooo.connector.server.OOoServer;
  * 
  * Very helpful in getting the named pipe connection working has been the posts
  * of mnasato in the thread "Correct FilterName to open RTF from bytestream?" at
- * http://www.oooforum.org/forum/viewtopic.phtml?t=40263&highlight=named+pipe.
+ * http://www.oooforum.org/forum/viewtopic.phtml?t=40263&amp;highlight=named+pipe.
  */
 public class BootstrapPipeConnector extends BootstrapConnector {
 
@@ -41,6 +41,7 @@ public class BootstrapPipeConnector extends BootstrapConnector {
      * component context for using the connection to the OOo server.
      * 
      * @return             The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public XComponentContext connect() throws BootstrapException {
 
@@ -56,6 +57,7 @@ public class BootstrapPipeConnector extends BootstrapConnector {
      * 
      * @param   pipeName   The pipe name
      * @return             The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public XComponentContext connect(String pipeName) throws BootstrapException {
 
@@ -75,6 +77,7 @@ public class BootstrapPipeConnector extends BootstrapConnector {
      * 
      * @param   oooExecFolder      The folder of the OOo installation containing the soffice executable
      * @return                     The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public static final XComponentContext bootstrap(String oooExecFolder) throws BootstrapException {
 
@@ -90,6 +93,7 @@ public class BootstrapPipeConnector extends BootstrapConnector {
      * @param   oooExecFolder      The folder of the OOo installation containing the soffice executable
      * @param   pipeName           The pipe name
      * @return                     The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public static final XComponentContext bootstrap(String oooExecFolder, String pipeName) throws BootstrapException {
 

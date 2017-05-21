@@ -82,8 +82,10 @@ public class OOoServer {
      * - accept option    : -accept=pipe,name=oooPipe;urp;
      * 
      * @param   oooAcceptOption      The accept option
+     * @throws BootstrapException     If no service manager is found
+     * @throws IOException            Not known
      */
-    public void start(String oooAcceptOption) throws BootstrapException, IOException, MalformedURLException {
+    public void start(String oooAcceptOption) throws BootstrapException, IOException {
 
         // find office executable relative to this class's class loader
         String sOffice = System.getProperty("os.name").startsWith("Windows")? "soffice.exe": "soffice";            

@@ -35,6 +35,7 @@ public class BootstrapSocketConnector extends BootstrapConnector {
      * component context for using the connection to the OOo server.
      * 
      * @return             The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public XComponentContext connect() throws BootstrapException {
 
@@ -53,6 +54,7 @@ public class BootstrapSocketConnector extends BootstrapConnector {
      * @param   host   The host
      * @param   port   The port
      * @return         The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public XComponentContext connect(String host, int port) throws BootstrapException {
 
@@ -75,6 +77,7 @@ public class BootstrapSocketConnector extends BootstrapConnector {
      * 
      * @param   oooExecFolder      The folder of the OOo installation containing the soffice executable
      * @return                     The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public static final XComponentContext bootstrap(String oooExecFolder) throws BootstrapException {
 
@@ -92,6 +95,7 @@ public class BootstrapSocketConnector extends BootstrapConnector {
      * @param   host               The host
      * @param   port               The port
      * @return                     The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public static final XComponentContext bootstrap(String oooExecFolder, String host, int port) throws BootstrapException {
 

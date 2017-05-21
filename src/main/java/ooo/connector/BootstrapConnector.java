@@ -89,6 +89,7 @@ public class BootstrapConnector {
      * @param   oooAcceptOption       The accept option
      * @param   oooConnectionString   The connection string
      * @return                        The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public XComponentContext connect(String oooAcceptOption, String oooConnectionString) throws BootstrapException {
 
@@ -211,6 +212,7 @@ public class BootstrapConnector {
      * @param   oooAcceptOption       The accept option
      * @param   oooConnectionString   The connection string
      * @return                        The component context
+     * @throws BootstrapException     If no service manager is found
      */
     public static final XComponentContext bootstrap(String oooExecFolder, String oooAcceptOption, String oooConnectionString) throws BootstrapException {
 

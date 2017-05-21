@@ -81,7 +81,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
+                <version>1.6</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -137,7 +137,6 @@
                 <configuration>
                     <serverId>oss.sonatype.org</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <description>${project.version}</description>
                 </configuration>
                 <executions>
                     <execution>
