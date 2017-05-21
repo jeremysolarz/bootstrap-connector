@@ -11,11 +11,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <name>BootstrapSocketConnector</name>
+    <name>${project.groupId}:${project.artifactId}</name>
     <description>Helper classes to resolve regularly occurring error "no office executable found!" when launching open
         office in command line mode.</description>
     <url>https://github.com/jeremysolarz/bootstrap-connector</url>
-    <name>${project.groupId}:${project.artifactId}</name>
 
     <licenses>
         <license>
